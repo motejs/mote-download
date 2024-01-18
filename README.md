@@ -1,2 +1,2 @@
 # mote-download
-模板库下载工具
+🛠️ GitHub平台库下载工具
