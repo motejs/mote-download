@@ -17,13 +17,10 @@ program
   .command("create [project-name]")
   .description("create a new project")
   .option("-f, --force", "overwrite target directory if it exist")
-  .option("-c, --clone", "通过git clone下载模板")
-  .option("-o, --owner <github owner>", "git owner name")
-  .option("-t, --token [Personal access token]", "如果需要访问私人（private）仓库，请提供访问token，否则只能访问到公开（public）仓库")
-  // 模板库名称前缀
-  .option("-p, --prefix [template prefix]", "Template library name prefix, default is 'template-'")
+  .option("-c, --clone", "git clone to download template")
+  .option("-p, --private", "download public and private repository")
   .action((name, options) => {
-    require("./lib/create.js")(name, options);
+      require("./lib/create.js")(name, options); 
   });
 
 program.on("--help", () => {
