@@ -15,10 +15,10 @@ program
 
 program
   .command("create [project-name]")
-  .description("create a new project")
-  .option("-f, --force", "overwrite target directory if it exist")
-  .option("-c, --clone", "git clone to download template")
-  .option("-p, --private", "download public and private repository")
+  .description("create a new project from a template")
+  .option("-f, --force", "如果目录存在，强制覆盖")
+  .option("-c, --clone", "用'git clone'下载库")
+  .option("-p, --private", "下载公开和私有库")
   .action((name, options) => {
       require("./lib/create.js")(name, options); 
   });
