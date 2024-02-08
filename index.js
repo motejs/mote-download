@@ -19,6 +19,7 @@ program
   .option("-f, --force", "如果目录存在，强制覆盖")
   .option("-c, --clone", "用'git clone'下载库")
   .option("-p, --private", "下载公开和私有库")
+  .option("-lc, --lastConfig", "使用上次配置")
   .action((name, options) => {
       require("./lib/create.js")(name, options); 
   });
