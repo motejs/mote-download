@@ -1,10 +1,10 @@
 {
-  "name": "mote-download",
-  "version": "0.1.0",
+  "name": "@mote/download",
+  "version": "0.2.0",
   "description": "List GitHub repository and download.",
   "main": "index.js",
   "bin": {
-    "mote-download": "index.js"
+    "download": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,14 +18,13 @@
     "private",
     "token"
   ],
-  "author": "jovy",
+  "author": "Jovy",
   "license": "MIT",
   "dependencies": {
     "@octokit/core": "^5.0.2",
     "chalk": "^4.1.2",
     "commander": "^11.1.0",
     "download": "^8.0.0",
-    "figlet": "^1.7.0",
     "fs-extra": "^11.2.0",
     "git-clone": "^0.2.0",
     "inquirer": "^8.0.0",
